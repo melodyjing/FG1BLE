@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1111 Administrator, 1111, LIC=BUURY-ID0PF-634MB-2QTC8-5SI49-1HYG4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.27.1.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      UL2CM3.DLL V1.162.15.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+E:\Project\ËÎ¹úÎ°\FG1Blue\example\peripheral\adc\adc.uvprojx
+Project File Date:  05/31/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'adc'
+compiling clock.c...
+compiling my_printf.c...
+compiling adc_demo.c...
+compiling OSAL_adc.c...
+compiling adc_Main.c...
+compiling gpio.c...
+compiling main.c...
+assembling startup_ARMCM0.s...
+compiling pwrmgr.c...
+compiling adc.c...
+..\..\..\components\driver\adc\adc.c(701): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\components\driver\adc\adc.c: 1 warning, 0 errors
+compiling uart.c...
+compiling flash.c...
+compiling jump_table.c...
+compiling system_ARMCM0.c...
+linking...
+Program Size: Code=17040 RO-data=1692 RW-data=1160 ZI-data=10588  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin  -o  ./bin  ./Objects/adc.axf
+After Build - User command #2: fromelf.exe .\Objects\adc.axf --i32combined --output .\bin\adc.hex
+".\Objects\adc.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+   * Component: Startup Version: 1.1.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_adc
+  D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.5.1\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: ARM::Device:Startup:1.1.0
+      Source file:   Device\ARM\ARMCM0\Source\system_ARMCM0.c
+      Include file:  Device\ARM\ARMCM0\Include\ARMCM0.h
+      Source file:   Device\ARM\ARMCM0\Source\ARM\startup_ARMCM0.s
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
